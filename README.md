@@ -1,6 +1,6 @@
 # Statsized
 
-A GRPC Server for live hockey stats
+A GRPC Server for live NHL stats
 
 ## Overview
 
@@ -30,3 +30,13 @@ In the future, this project will be expanded to provide features such as
     - Per game event tracking
     - Per game shift tracking
 - Setup server (grpc)
+
+## Devlog
+
+> Current status: scheduler and most mock methods have been setup and one basic endpoints. Some parser have been written
+
+### 0.0.0 [WIP]
+
+- Setup scheduler
+- Setup GRPC server classes
+- Setup (some) parsers
