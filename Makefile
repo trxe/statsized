@@ -6,6 +6,9 @@
 dev: ## install dependencies 
 	python -m pip install -e .[develop]
 
+client:  ## run
+	python statsized/client/client.py
+
 run:  ## run
 	python statsized/main.py -c .[config]
 

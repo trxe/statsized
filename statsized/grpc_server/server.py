@@ -1,4 +1,5 @@
 from concurrent.futures import ThreadPoolExecutor
+
 import grpc
 import grpc._server
 import statsized_pb2
@@ -11,7 +12,7 @@ class StatsizedServicer(statsized_pb2_grpc.StatsizedServicer):
         Slogger.log("GetCurrentGames")
         Slogger.log(request)
 
-        response = statsized_pb2.Response()
+        response = statsized_pb2.ResponseGames()
         response.games = []
         return response
 

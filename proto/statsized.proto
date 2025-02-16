@@ -3,120 +3,278 @@ syntax = "proto3";
 package statsized;
 
 service Statsized {
-    rpc GetCurrentGames (RequestFilter) returns (Response);
-    // rpc StreamPlays (RequestFilter) returns (stream Play);
-    // rpc StreamShifts (RequestFilter) returns (stream Shift);
-    // rpc StreamScores (RequestFilter) returns (stream Score);
-    // rpc StreamClock (RequestFilter) returns (stream Clock);
-    // rpc GetPlays (Game) returns (Play);
-    // rpc GetShifts (Game) returns (Shift);
-    // rpc GetScores (Game) returns (Score);
-    // rpc GetClock (Game) returns (Clock);
-}
-
-message Coords {
-    double x = 1;
-    double y = 2;
-}
-
-message Player {
-    int64 id = 1;
-}
-
-message Team {
-    int64 id = 1;
-}
-
-message Game {
-    int64 id = 1;
-    optional int32 season = 2;
-    optional int32 game_type_id = 3;
-    optional string start_time_utc = 4;
-    optional string venue_utc_offset = 5;
-    optional string venue_timezone = 6;
-    optional string game_state = 7;
-    optional Team home_team = 8;
-    optional Team away_team = 9;
-    optional string gamecenter_url = 10;
-}
-
-message Filter {
-    Game game = 1;
-    optional Team team = 2;
-    optional Player player = 3;
+  rpc GetCurrentGames (RequestFilter) returns (ResponseGames);
+  // rpc StreamPlays (RequestFilter) returns (stream Play);
+  // rpc StreamShifts (RequestFilter) returns (stream Shift);
+  // rpc StreamScores (RequestFilter) returns (stream Score);
+  // rpc StreamClock (RequestFilter) returns (stream Clock);
+  // rpc GetPlays (Game) returns (Play);
+  // rpc GetShifts (Game) returns (Shift);
+  // rpc GetScores (Game) returns (Score);
+  // rpc GetClock (Game) returns (Clock);
 }
 
 message RequestFilter {
-    string host = 1;
-    optional Filter filter = 2;
+  string request_type = 1;
+  repeated int64 game_id = 2;
 }
 
-message Response {
-    repeated Game games = 1;
+message ResponseGames {
+  string message = 1;
+  repeated NHLGame games = 2;
 }
 
-message Clock {
-    int32 seconds_remaining = 1;
-    bool running = 2;
-    bool in_intermission = 3;
+// NHLClock message
+message NHLClock {
+  string timeRemaining = 1;
+  int32 secondsRemaining = 2;
+  string running = 3;
+  bool inIntermission = 4;
 }
 
-message PlayerKeyFrame {
-    int64 id = 1;
-    Player player = 2;
-    int64 jersey_number = 3;
-    Team team = 4;
-    Coords coord = 5;
+// NHLMultilingual message
+message NHLMultilingual {
+  string default = 1;
+  optional string fr = 2;
+  optional string cs = 3;
+  optional string fi = 4;
+  optional string sk = 5;
+  optional string de = 6;
+  optional string es = 7;
 }
 
-message Attribute {
-    string key = 1;
-    string value = 2;
+// NHLPlayer message
+message NHLPlayer {
+  int64 playerId = 1;
+  NHLMultilingual firstName = 2;
+  NHLMultilingual lastName = 3;
+  NHLMultilingual name = 4;
+  optional int32 assistsToDate = 5;
+  optional int32 sweaterNumber = 6;
 }
 
-message Shift {
-    int64 id = 1;
-    int32 detail_code = 2;
-    int64 start_ts = 3;
-    int64 end_ts = 4;
-    Player player = 5;
-    Team team = 6;
-    int64 shift_num = 7;
-    Game game = 8;
+// NHLTeam message
+message NHLTeam {
+  int64 id = 1;
+  optional NHLMultilingual commonName = 2;
+  optional NHLMultilingual name = 3;
+  optional string abbrev = 4;
+  optional NHLMultilingual placeName = 5;
+  optional NHLMultilingual placeNameWithPreposition = 6;
+  optional int32 score = 7;
+  optional int32 sog = 8;
+  optional string logo = 9;
+  optional string darkLogo = 10;
+  optional string record = 11;
 }
 
-message PlayerEvent {
-    int64 id = 1;
-    Player player = 2;
-    int64 event_code = 3;
-    string event = 4;
-    optional string event_role = 6;
-    optional Team event_owner_team = 7;
-    repeated Attribute attrs = 8;
-    optional Coords coords = 9;
+// NHLShootout message
+message NHLShootout {
+  int64 sequence = 1;
+  int64 playerId = 2;
+  string teamAbbrev = 3;
+  string firstName = 4;
+  string lastName = 5;
+  string shotType = 6;
+  string result = 7;
+  string headshot = 8;
+  bool gameWinner = 9;
 }
 
-message Play {
-    int64 id = 1;
-    int32 period = 2;
-    int32 time_since_start = 3;
+// NHLPlayerShift message
+message NHLPlayerShift {
+  int64 id = 1;
+  int32 detailCode = 2;
+  string duration = 3;
+  string startTime = 4;
+  string endTime = 5;
+  string eventDescription = 6; // EVG/PPG/SHG
+  string eventDetails = 7; // Assists
+  int32 eventNumber = 8;
+  string firstName = 9;
+  int64 gameId = 10;
+  string hexValue = 11;
+  string lastName = 12;
+  int32 period = 13;
+  int64 playerId = 14;
+  int32 shiftNumber = 15;
+  string teamAbbrev = 16;
+  int64 teamId = 17;
+  string teamName = 18;
+  int32 typeCode = 19;
+}
 
-    // Change the following to enums later
-    string situation_code = 4;
-    string home_team_defending_side = 5;
-    int32 type_code = 6;
-    string type_desc = 7;
-    int32 sort_order = 8;
+// NHLGoal message
+message NHLGoal {
+  string situationCode = 1;
+  int64 eventId = 2;
+  string strength = 3;
+  int64 playerId = 4;
+  NHLMultilingual firstName = 5;
+  NHLMultilingual lastName = 6;
+  NHLMultilingual name = 7;
+  int32 sweaterNumber = 8;
+  int32 goalsToDate = 9;
+  NHLMultilingual teamAbbrev = 10;
+  string headshot = 11;
+  string highlightClipSharingUrl = 12;
+  string highlightClipSharingUrlFr = 13;
+  int32 highlightClip = 14;
+  int32 highlightClipFr = 15;
+  int32 discreteClip = 16;
+  int32 discreteClipFr = 17;
+  int32 awayScore = 18;
+  int32 homeScore = 19;
+  string timeInPeriod = 20;
+  string shotType = 21;
+  string goalModifier = 22;
+  repeated NHLPlayer assists = 23;
+  string pptReplayUrl = 24;
+  string homeTeamDefendingSide = 25; // "left" | "right"
+  bool isHome = 26;
+}
+
+// NHLKeyframe message
+message NHLKeyframe {
+  int64 id = 1;
+  int64 playerId = 2;
+  int32 sweaterNumber = 3;
+  string teamAbbrev = 4;
+  int64 teamId = 5;
+  float x = 6;
+  float y = 7;
+}
+
+// NHLTimestampKeyframe message
+message NHLTimestampKeyframe {
+  int64 timestamp = 1;
+  repeated NHLKeyframe onIce = 2;
+}
+
+// NHLStar message
+message NHLStar {
+  int32 star = 1;
+  int64 playerId = 2;
+  string teamAbbrev = 3;
+  string headshot = 4;
+  NHLMultilingual name = 5;
+  int32 sweaterNo = 6;
+  string position = 7;
+  float goalsAgainstAverage = 8;
+  float savePctg = 9;
+  int32 goals = 10;
+  int32 assists = 11;
+  int32 points = 12;
+}
+
+// NHLPeriodDescriptor message
+message NHLPeriodDescriptor {
+  int32 number = 1;
+  string periodType = 2; // 'REG' | 'OT' | 'SO'
+  int32 maxRegulationPeriods = 3;
+}
+
+// NHLPlay message
+message NHLPlay {
+  int64 eventId = 1;
+  NHLPeriodDescriptor periodDescriptor = 2;
+  string timeInPeriod = 3; // MM:SS
+  string timeRemaining = 4; // MM:SS
+  string situationCode = 5; // HomeG HomeS AwayG AwayS
+  string homeTeamDefendingSide = 6; // "left" | "right"
+  int32 typeCode = 7;
+  int32 sortOrder = 8;
+  message Details {
+    optional int64 scoringPlayerId = 1;       // Who scored the goal
+    optional int32 scoringPlayerTotal = 2;    // Total points for scoring player
+    optional int32 homeScore = 3;             // Home team score after play
+    optional int32 awayScore = 4;             // Away team score after play
+    optional string shotType = 5;             // Type of shot taken (e.g., slapshot, wristshot)
+    optional int32 assist1PlayerTotal = 6;    // Total points for first assist player
+    optional int64 assist1PlayerId = 7;      // First assist player ID
+    optional int32 assist2PlayerTotal = 8;    // Total points for second assist player
+    optional int64 assist2PlayerId = 9;      // Second assist player ID
+    optional string highlightClipSharingUrl = 10; // URL for highlight clip
+    optional int32 highlightClip = 11;       // Clip ID for highlight
+    optional int32 highlightClipFr = 12;     // French clip ID for highlight
+    optional string pptReplayUrl = 13;       // Powerplay replay URL
     
-    repeated PlayerEvent player_events = 9;
+    optional int64 playerId = 14;             // Player involved in the play
+    optional string eventOwnerTeamId = 15;    // Team ID that owns the event
+    optional int32 reason = 16;               // Reason for the event (e.g., penalty type, cause)
+    optional int32 secondaryReason = 17;               // Reason for the event (e.g., penalty type, cause)
+    optional int64 committingPlayerId = 18;   // Player committing a penalty (if applicable)
+    optional string eventDescription = 19;    // Event description (e.g., goal, penalty)
+    optional int64 losingPlayerId = 20;       // Player losing a challenge (if applicable)
+    optional int64 winningPlayerId = 21;      // Player winning the play (e.g., shootout winner)
+    optional string highlightClipSharingUrlFr = 22; // French version of the highlight clip URL
+    optional int64 goalieInNetId = 23;        // Goalie in net during the play
+    optional string drawnBy = 24;             // Player who drew the penalty (if applicable)
+    optional string teamAbbrev = 25;          // Team abbreviation (e.g., "NYR", "BOS")
+    optional string homeTeamDefendingSide = 26; // Whether home team is defending left or right
+    optional float xCoord = 27;               // X coordinate on the ice for event
+    optional float yCoord = 28;               // Y coordinate on the ice for event
+    optional int32 zoneCode = 29;             // Zone where the play happened (e.g., offensive, defensive)
+    
+    optional int32 duration = 31;             // Duration of penalty or event in seconds
+    optional int64 committedByPlayerId = 32;  // Player committing the event (e.g., penalty, goal)
+    optional int64 hitteePlayerId = 33;       // Player hit during a hit event
+    optional int64 blockingPlayerId = 34;     // Player blocking the shot
+    optional int64 hittingPlayerId = 35;      // Player delivering the hit
+    optional int64 drawnByPlayerId = 36;      // Player drawing the penalty
+  }
+  Details details = 9;
 }
 
-message Score {
-    string situation_code = 1;
-    int32 event_code = 2;
-    Player player = 3;
-    repeated Player assists = 4;
-    bool is_home = 5;
-    int32 home_score = 6;
-    int32 away_score = 7;
+// NHLGameSummary message
+message NHLGameSummary {
+  message ScoringByPeriod {
+    NHLPeriodDescriptor periodDescriptor = 1;
+    repeated NHLGoal goals = 2;
+  }
+  message PenaltiesByPeriod {
+    NHLPeriodDescriptor periodDescriptor = 1;
+    repeated NHLPenalty penalties = 2;
+  }
+  repeated ScoringByPeriod scoring = 1;
+  repeated PenaltiesByPeriod penalties = 2;
+  repeated NHLShootout shootout = 3;
+}
+
+// NHLPenalty message
+message NHLPenalty {
+  string timeInPeriod = 1;
+  string type = 2;
+  int32 duration = 3;
+  string committedByPlayer = 4; // name
+  NHLMultilingual teamAbbrev = 5;
+  string drawnBy = 6; // name
+  string descKey = 7; // name
+}
+
+// NHLGame message
+message NHLGame {
+  int64 id = 1;
+  int32 season = 2;
+  int32 gameType = 3;
+  bool limitedScoring = 4;
+  string gameDate = 5;
+  NHLMultilingual venue = 6;
+  NHLMultilingual venueLocation = 7;
+  string startTimeUTC = 8;
+  string easternUTCOffset = 9;
+  string venueUTCOffset = 10;
+  string venueTimezone = 11;
+  NHLPeriodDescriptor periodDescriptor = 12;
+  string gameState = 13;
+  string gameScheduleState = 14;
+  NHLTeam awayTeam = 15;
+  NHLTeam homeTeam = 16;
+  optional NHLGameSummary summary = 17;
+  repeated NHLGoal goals = 18;
+  optional string gameCenterLink = 19;
+  message GameOutcome {
+    string lastPeriodType = 1;
+  }
+  optional GameOutcome gameOutcome = 20;
 }
