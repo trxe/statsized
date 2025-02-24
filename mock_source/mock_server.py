@@ -116,7 +116,6 @@ def run(server_class=HTTPServer, handler_class=MockNHLServer, addr="localhost", 
 
 
 if __name__ == "__main__":
-
     parser = argparse.ArgumentParser(description="Run a simple HTTP server")
     parser.add_argument(
         "-l",

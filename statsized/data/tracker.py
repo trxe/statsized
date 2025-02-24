@@ -16,7 +16,6 @@ def fetch_data(url: str, params: map = {}):
         data = requests.get(url, params=params, headers={
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0",
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-            'Referer': 'https://www.nhl.com/',
         }).json()
         time.sleep(1)
         return data

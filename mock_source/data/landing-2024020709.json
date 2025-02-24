@@ -1,64 +1,116 @@
-LANDING_TBL_ANA_250116_OT_SO = {
+{
     "id": 2024020709,
     "season": 20242025,
     "gameType": 2,
-    "limitedScoring": False,
+    "limitedScoring": false,
     "gameDate": "2025-01-16",
-    "venue": {"default": "Amalie Arena"},
-    "venueLocation": {"default": "Tampa"},
+    "venue": {
+        "default": "Amalie Arena"
+    },
+    "venueLocation": {
+        "default": "Tampa"
+    },
     "startTimeUTC": "2025-01-17T00:00:00Z",
     "easternUTCOffset": "-05:00",
     "venueUTCOffset": "-05:00",
     "venueTimezone": "US/Eastern",
-    "periodDescriptor": {"number": 5, "periodType": "SO", "maxRegulationPeriods": 3},
+    "periodDescriptor": {
+        "number": 5,
+        "periodType": "SO",
+        "maxRegulationPeriods": 3
+    },
     "tvBroadcasts": [
-        {"id": 560, "market": "H", "countryCode": "US", "network": "FDSNSUN", "sequenceNumber": 278},
-        {"id": 553, "market": "A", "countryCode": "US", "network": "Victory+", "sequenceNumber": 373},
-        {"id": 219, "market": "A", "countryCode": "US", "network": "KCOP-13", "sequenceNumber": 656},
+        {
+            "id": 560,
+            "market": "H",
+            "countryCode": "US",
+            "network": "FDSNSUN",
+            "sequenceNumber": 278
+        },
+        {
+            "id": 553,
+            "market": "A",
+            "countryCode": "US",
+            "network": "Victory+",
+            "sequenceNumber": 373
+        },
+        {
+            "id": 219,
+            "market": "A",
+            "countryCode": "US",
+            "network": "KCOP-13",
+            "sequenceNumber": 656
+        }
     ],
     "gameState": "OFF",
     "gameScheduleState": "OK",
     "awayTeam": {
         "id": 24,
-        "commonName": {"default": "Ducks"},
+        "commonName": {
+            "default": "Ducks"
+        },
         "abbrev": "ANA",
-        "placeName": {"default": "Anaheim"},
-        "placeNameWithPreposition": {"default": "Anaheim", "fr": "d'Anaheim"},
+        "placeName": {
+            "default": "Anaheim"
+        },
+        "placeNameWithPreposition": {
+            "default": "Anaheim",
+            "fr": "d'Anaheim"
+        },
         "score": 3,
         "sog": 37,
         "logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
-        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/ANA_dark.svg",
+        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/ANA_dark.svg"
     },
     "homeTeam": {
         "id": 14,
-        "commonName": {"default": "Lightning"},
+        "commonName": {
+            "default": "Lightning"
+        },
         "abbrev": "TBL",
-        "placeName": {"default": "Tampa Bay"},
-        "placeNameWithPreposition": {"default": "Tampa Bay", "fr": "de Tampa Bay"},
+        "placeName": {
+            "default": "Tampa Bay"
+        },
+        "placeNameWithPreposition": {
+            "default": "Tampa Bay",
+            "fr": "de Tampa Bay"
+        },
         "score": 4,
         "sog": 35,
         "logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
-        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/TBL_dark.svg",
+        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/TBL_dark.svg"
     },
-    "shootoutInUse": True,
+    "shootoutInUse": true,
     "maxPeriods": 5,
     "regPeriods": 3,
-    "otInUse": True,
-    "tiesInUse": False,
+    "otInUse": true,
+    "tiesInUse": false,
     "summary": {
         "scoring": [
             {
-                "periodDescriptor": {"number": 1, "periodType": "REG", "maxRegulationPeriods": 3},
+                "periodDescriptor": {
+                    "number": 1,
+                    "periodType": "REG",
+                    "maxRegulationPeriods": 3
+                },
                 "goals": [
                     {
                         "situationCode": "1551",
                         "eventId": 176,
                         "strength": "ev",
                         "playerId": 8478873,
-                        "firstName": {"default": "Troy"},
-                        "lastName": {"default": "Terry"},
-                        "name": {"default": "T. Terry"},
-                        "teamAbbrev": {"default": "ANA"},
+                        "firstName": {
+                            "default": "Troy"
+                        },
+                        "lastName": {
+                            "default": "Terry"
+                        },
+                        "name": {
+                            "default": "T. Terry"
+                        },
+                        "teamAbbrev": {
+                            "default": "ANA"
+                        },
                         "headshot": "https://assets.nhle.com/mugs/nhl/20242025/ANA/8478873.png",
                         "highlightClipSharingUrl": "https://nhl.com/video/troy-terry-with-a-goal-vs-tampa-bay-lightning-6367210477112",
                         "highlightClipSharingUrlFr": "https://nhl.com/fr/video/ana-tbl-terry-marque-un-but-contre-andrei-vasilevskiy-6367213524112",
@@ -69,41 +121,63 @@ LANDING_TBL_ANA_250116_OT_SO = {
                         "goalsToDate": 15,
                         "awayScore": 1,
                         "homeScore": 0,
-                        "leadingTeamAbbrev": {"default": "ANA"},
+                        "leadingTeamAbbrev": {
+                            "default": "ANA"
+                        },
                         "timeInPeriod": "06:03",
                         "shotType": "tip-in",
                         "goalModifier": "none",
                         "assists": [
                             {
                                 "playerId": 8476458,
-                                "firstName": {"default": "Ryan"},
-                                "lastName": {"default": "Strome"},
-                                "name": {"default": "R. Strome"},
+                                "firstName": {
+                                    "default": "Ryan"
+                                },
+                                "lastName": {
+                                    "default": "Strome"
+                                },
+                                "name": {
+                                    "default": "R. Strome"
+                                },
                                 "assistsToDate": 18,
-                                "sweaterNumber": 16,
+                                "sweaterNumber": 16
                             },
                             {
                                 "playerId": 8475208,
-                                "firstName": {"default": "Brian"},
-                                "lastName": {"default": "Dumoulin"},
-                                "name": {"default": "B. Dumoulin"},
+                                "firstName": {
+                                    "default": "Brian"
+                                },
+                                "lastName": {
+                                    "default": "Dumoulin"
+                                },
+                                "name": {
+                                    "default": "B. Dumoulin"
+                                },
                                 "assistsToDate": 10,
-                                "sweaterNumber": 6,
-                            },
+                                "sweaterNumber": 6
+                            }
                         ],
                         "pptReplayUrl": "https://wsr.nhle.com/sprites/20242025/2024020709/ev176.json",
                         "homeTeamDefendingSide": "left",
-                        "isHome": False,
+                        "isHome": false
                     },
                     {
                         "situationCode": "1451",
                         "eventId": 318,
                         "strength": "pp",
                         "playerId": 8478519,
-                        "firstName": {"default": "Anthony"},
-                        "lastName": {"default": "Cirelli"},
-                        "name": {"default": "A. Cirelli"},
-                        "teamAbbrev": {"default": "TBL"},
+                        "firstName": {
+                            "default": "Anthony"
+                        },
+                        "lastName": {
+                            "default": "Cirelli"
+                        },
+                        "name": {
+                            "default": "A. Cirelli"
+                        },
+                        "teamAbbrev": {
+                            "default": "TBL"
+                        },
                         "headshot": "https://assets.nhle.com/mugs/nhl/20242025/TBL/8478519.png",
                         "highlightClipSharingUrl": "https://nhl.com/video/ana-tbl-cirelli-scores-ppg-against-lukas-dostal-6367210679112",
                         "highlightClipSharingUrlFr": "https://nhl.com/fr/video/ana-tbl-cirelli-marque-un-but-en-a-n-contre-lukas-dostal-6367211749112",
@@ -120,39 +194,63 @@ LANDING_TBL_ANA_250116_OT_SO = {
                         "assists": [
                             {
                                 "playerId": 8479542,
-                                "firstName": {"default": "Brandon"},
-                                "lastName": {"default": "Hagel"},
-                                "name": {"default": "B. Hagel"},
+                                "firstName": {
+                                    "default": "Brandon"
+                                },
+                                "lastName": {
+                                    "default": "Hagel"
+                                },
+                                "name": {
+                                    "default": "B. Hagel"
+                                },
                                 "assistsToDate": 29,
-                                "sweaterNumber": 38,
+                                "sweaterNumber": 38
                             },
                             {
                                 "playerId": 8475167,
-                                "firstName": {"default": "Victor"},
-                                "lastName": {"default": "Hedman"},
-                                "name": {"default": "V. Hedman"},
+                                "firstName": {
+                                    "default": "Victor"
+                                },
+                                "lastName": {
+                                    "default": "Hedman"
+                                },
+                                "name": {
+                                    "default": "V. Hedman"
+                                },
                                 "assistsToDate": 28,
-                                "sweaterNumber": 77,
-                            },
+                                "sweaterNumber": 77
+                            }
                         ],
                         "pptReplayUrl": "https://wsr.nhle.com/sprites/20242025/2024020709/ev318.json",
                         "homeTeamDefendingSide": "left",
-                        "isHome": True,
-                    },
-                ],
+                        "isHome": true
+                    }
+                ]
             },
             {
-                "periodDescriptor": {"number": 2, "periodType": "REG", "maxRegulationPeriods": 3},
+                "periodDescriptor": {
+                    "number": 2,
+                    "periodType": "REG",
+                    "maxRegulationPeriods": 3
+                },
                 "goals": [
                     {
                         "situationCode": "1451",
                         "eventId": 486,
                         "strength": "pp",
                         "playerId": 8477404,
-                        "firstName": {"default": "Jake"},
-                        "lastName": {"default": "Guentzel"},
-                        "name": {"default": "J. Guentzel"},
-                        "teamAbbrev": {"default": "TBL"},
+                        "firstName": {
+                            "default": "Jake"
+                        },
+                        "lastName": {
+                            "default": "Guentzel"
+                        },
+                        "name": {
+                            "default": "J. Guentzel"
+                        },
+                        "teamAbbrev": {
+                            "default": "TBL"
+                        },
                         "headshot": "https://assets.nhle.com/mugs/nhl/20242025/TBL/8477404.png",
                         "highlightClipSharingUrl": "https://nhl.com/video/ana-tbl-guentzel-scores-ppg-against-lukas-dostal-6367209825112",
                         "highlightClipSharingUrlFr": "https://nhl.com/fr/video/ana-tbl-guentzel-marque-un-but-en-a-n-contre-lukas-dostal-6367210690112",
@@ -163,41 +261,69 @@ LANDING_TBL_ANA_250116_OT_SO = {
                         "goalsToDate": 22,
                         "awayScore": 1,
                         "homeScore": 2,
-                        "leadingTeamAbbrev": {"default": "TBL"},
+                        "leadingTeamAbbrev": {
+                            "default": "TBL"
+                        },
                         "timeInPeriod": "02:51",
                         "shotType": "poke",
                         "goalModifier": "none",
                         "assists": [
                             {
                                 "playerId": 8476453,
-                                "firstName": {"default": "Nikita"},
-                                "lastName": {"default": "Kucherov", "cs": "Kučerov", "fi": "Kutsherov", "sk": "Kučerov"},
-                                "name": {"default": "N. Kucherov", "cs": "N. Kučerov", "fi": "N. Kutsherov", "sk": "N. Kučerov"},
+                                "firstName": {
+                                    "default": "Nikita"
+                                },
+                                "lastName": {
+                                    "default": "Kucherov",
+                                    "cs": "Kučerov",
+                                    "fi": "Kutsherov",
+                                    "sk": "Kučerov"
+                                },
+                                "name": {
+                                    "default": "N. Kucherov",
+                                    "cs": "N. Kučerov",
+                                    "fi": "N. Kutsherov",
+                                    "sk": "N. Kučerov"
+                                },
                                 "assistsToDate": 44,
-                                "sweaterNumber": 86,
+                                "sweaterNumber": 86
                             },
                             {
                                 "playerId": 8478178,
-                                "firstName": {"default": "Darren"},
-                                "lastName": {"default": "Raddysh"},
-                                "name": {"default": "D. Raddysh"},
+                                "firstName": {
+                                    "default": "Darren"
+                                },
+                                "lastName": {
+                                    "default": "Raddysh"
+                                },
+                                "name": {
+                                    "default": "D. Raddysh"
+                                },
                                 "assistsToDate": 15,
-                                "sweaterNumber": 43,
-                            },
+                                "sweaterNumber": 43
+                            }
                         ],
                         "pptReplayUrl": "https://wsr.nhle.com/sprites/20242025/2024020709/ev486.json",
                         "homeTeamDefendingSide": "right",
-                        "isHome": True,
+                        "isHome": true
                     },
                     {
                         "situationCode": "1551",
                         "eventId": 636,
                         "strength": "ev",
                         "playerId": 8484153,
-                        "firstName": {"default": "Leo"},
-                        "lastName": {"default": "Carlsson"},
-                        "name": {"default": "L. Carlsson"},
-                        "teamAbbrev": {"default": "ANA"},
+                        "firstName": {
+                            "default": "Leo"
+                        },
+                        "lastName": {
+                            "default": "Carlsson"
+                        },
+                        "name": {
+                            "default": "L. Carlsson"
+                        },
+                        "teamAbbrev": {
+                            "default": "ANA"
+                        },
                         "headshot": "https://assets.nhle.com/mugs/nhl/20242025/ANA/8484153.png",
                         "highlightClipSharingUrl": "https://nhl.com/video/ana-tbl-carlsson-scores-goal-against-andrei-vasilevskiy-6367208869112",
                         "highlightClipSharingUrlFr": "https://nhl.com/fr/video/ana-tbl-carlsson-marque-un-but-contre-andrei-vasilevskiy-6367210225112",
@@ -214,26 +340,40 @@ LANDING_TBL_ANA_250116_OT_SO = {
                         "assists": [
                             {
                                 "playerId": 8482745,
-                                "firstName": {"default": "Mason"},
-                                "lastName": {"default": "McTavish"},
-                                "name": {"default": "M. McTavish"},
+                                "firstName": {
+                                    "default": "Mason"
+                                },
+                                "lastName": {
+                                    "default": "McTavish"
+                                },
+                                "name": {
+                                    "default": "M. McTavish"
+                                },
                                 "assistsToDate": 13,
-                                "sweaterNumber": 23,
+                                "sweaterNumber": 23
                             }
                         ],
                         "pptReplayUrl": "https://wsr.nhle.com/sprites/20242025/2024020709/ev636.json",
                         "homeTeamDefendingSide": "right",
-                        "isHome": False,
+                        "isHome": false
                     },
                     {
                         "situationCode": "1441",
                         "eventId": 685,
                         "strength": "ev",
                         "playerId": 8478010,
-                        "firstName": {"default": "Brayden"},
-                        "lastName": {"default": "Point"},
-                        "name": {"default": "B. Point"},
-                        "teamAbbrev": {"default": "TBL"},
+                        "firstName": {
+                            "default": "Brayden"
+                        },
+                        "lastName": {
+                            "default": "Point"
+                        },
+                        "name": {
+                            "default": "B. Point"
+                        },
+                        "teamAbbrev": {
+                            "default": "TBL"
+                        },
                         "headshot": "https://assets.nhle.com/mugs/nhl/20242025/TBL/8478010.png",
                         "highlightClipSharingUrl": "https://nhl.com/video/ana-tbl-point-scores-goal-against-lukas-dostal-6367210592112",
                         "highlightClipSharingUrlFr": "https://nhl.com/fr/video/ana-tbl-point-marque-un-but-contre-lukas-dostal-6367209938112",
@@ -244,18 +384,32 @@ LANDING_TBL_ANA_250116_OT_SO = {
                         "goalsToDate": 26,
                         "awayScore": 2,
                         "homeScore": 3,
-                        "leadingTeamAbbrev": {"default": "TBL"},
+                        "leadingTeamAbbrev": {
+                            "default": "TBL"
+                        },
                         "timeInPeriod": "15:26",
                         "shotType": "wrist",
                         "goalModifier": "none",
                         "assists": [
                             {
                                 "playerId": 8476453,
-                                "firstName": {"default": "Nikita"},
-                                "lastName": {"default": "Kucherov", "cs": "Kučerov", "fi": "Kutsherov", "sk": "Kučerov"},
-                                "name": {"default": "N. Kucherov", "cs": "N. Kučerov", "fi": "N. Kutsherov", "sk": "N. Kučerov"},
+                                "firstName": {
+                                    "default": "Nikita"
+                                },
+                                "lastName": {
+                                    "default": "Kucherov",
+                                    "cs": "Kučerov",
+                                    "fi": "Kutsherov",
+                                    "sk": "Kučerov"
+                                },
+                                "name": {
+                                    "default": "N. Kucherov",
+                                    "cs": "N. Kučerov",
+                                    "fi": "N. Kutsherov",
+                                    "sk": "N. Kučerov"
+                                },
                                 "assistsToDate": 45,
-                                "sweaterNumber": 86,
+                                "sweaterNumber": 86
                             },
                             {
                                 "playerId": 8480246,
@@ -266,32 +420,48 @@ LANDING_TBL_ANA_250116_OT_SO = {
                                     "es": "Nicklaus",
                                     "fi": "Nicklaus",
                                     "sk": "Nicklaus",
-                                    "sv": "Nicklaus",
+                                    "sv": "Nicklaus"
                                 },
-                                "lastName": {"default": "Perbix"},
-                                "name": {"default": "N. Perbix"},
+                                "lastName": {
+                                    "default": "Perbix"
+                                },
+                                "name": {
+                                    "default": "N. Perbix"
+                                },
                                 "assistsToDate": 7,
-                                "sweaterNumber": 48,
-                            },
+                                "sweaterNumber": 48
+                            }
                         ],
                         "pptReplayUrl": "https://wsr.nhle.com/sprites/20242025/2024020709/ev685.json",
                         "homeTeamDefendingSide": "right",
-                        "isHome": True,
-                    },
-                ],
+                        "isHome": true
+                    }
+                ]
             },
             {
-                "periodDescriptor": {"number": 3, "periodType": "REG", "maxRegulationPeriods": 3},
+                "periodDescriptor": {
+                    "number": 3,
+                    "periodType": "REG",
+                    "maxRegulationPeriods": 3
+                },
                 "goals": [
                     {
                         "situationCode": "1551",
                         "eventId": 911,
                         "strength": "ev",
                         "playerId": 8477952,
-                        "firstName": {"default": "Robby"},
-                        "lastName": {"default": "Fabbri"},
-                        "name": {"default": "R. Fabbri"},
-                        "teamAbbrev": {"default": "ANA"},
+                        "firstName": {
+                            "default": "Robby"
+                        },
+                        "lastName": {
+                            "default": "Fabbri"
+                        },
+                        "name": {
+                            "default": "R. Fabbri"
+                        },
+                        "teamAbbrev": {
+                            "default": "ANA"
+                        },
                         "headshot": "https://assets.nhle.com/mugs/nhl/20242025/ANA/8477952.png",
                         "highlightClipSharingUrl": "https://nhl.com/video/ana-tbl-fabbri-scores-goal-against-andrei-vasilevskiy-6367209942112",
                         "highlightClipSharingUrlFr": "https://nhl.com/fr/video/ana-tbl-fabbri-marque-un-but-contre-andrei-vasilevskiy-6367209370112",
@@ -308,54 +478,93 @@ LANDING_TBL_ANA_250116_OT_SO = {
                         "assists": [
                             {
                                 "playerId": 8476885,
-                                "firstName": {"default": "Jacob"},
-                                "lastName": {"default": "Trouba"},
-                                "name": {"default": "J. Trouba"},
+                                "firstName": {
+                                    "default": "Jacob"
+                                },
+                                "lastName": {
+                                    "default": "Trouba"
+                                },
+                                "name": {
+                                    "default": "J. Trouba"
+                                },
                                 "assistsToDate": 9,
-                                "sweaterNumber": 65,
+                                "sweaterNumber": 65
                             },
                             {
                                 "playerId": 8483490,
-                                "firstName": {"default": "Pavel"},
-                                "lastName": {"default": "Mintyukov", "cs": "Mintjukov", "fi": "Mintjukov", "sk": "Mintjukov"},
-                                "name": {"default": "P. Mintyukov", "cs": "P. Mintjukov", "fi": "P. Mintjukov", "sk": "P. Mintjukov"},
+                                "firstName": {
+                                    "default": "Pavel"
+                                },
+                                "lastName": {
+                                    "default": "Mintyukov",
+                                    "cs": "Mintjukov",
+                                    "fi": "Mintjukov",
+                                    "sk": "Mintjukov"
+                                },
+                                "name": {
+                                    "default": "P. Mintyukov",
+                                    "cs": "P. Mintjukov",
+                                    "fi": "P. Mintjukov",
+                                    "sk": "P. Mintjukov"
+                                },
                                 "assistsToDate": 7,
-                                "sweaterNumber": 34,
-                            },
+                                "sweaterNumber": 34
+                            }
                         ],
                         "pptReplayUrl": "https://wsr.nhle.com/sprites/20242025/2024020709/ev911.json",
                         "homeTeamDefendingSide": "left",
-                        "isHome": False,
+                        "isHome": false
                     }
-                ],
+                ]
             },
-            {"periodDescriptor": {"number": 4, "periodType": "OT", "maxRegulationPeriods": 3}, "goals": []},
             {
-                "periodDescriptor": {"number": 5, "periodType": "SO", "maxRegulationPeriods": 3},
+                "periodDescriptor": {
+                    "number": 4,
+                    "periodType": "OT",
+                    "maxRegulationPeriods": 3
+                },
+                "goals": []
+            },
+            {
+                "periodDescriptor": {
+                    "number": 5,
+                    "periodType": "SO",
+                    "maxRegulationPeriods": 3
+                },
                 "goals": [
                     {
                         "situationCode": "1010",
                         "eventId": 214,
                         "strength": "ev",
                         "playerId": 8477404,
-                        "firstName": {"default": "Jake"},
-                        "lastName": {"default": "Guentzel"},
-                        "name": {"default": "J. Guentzel"},
-                        "teamAbbrev": {"default": "TBL"},
+                        "firstName": {
+                            "default": "Jake"
+                        },
+                        "lastName": {
+                            "default": "Guentzel"
+                        },
+                        "name": {
+                            "default": "J. Guentzel"
+                        },
+                        "teamAbbrev": {
+                            "default": "TBL"
+                        },
                         "headshot": "https://assets.nhle.com/mugs/nhl/20242025/TBL/8477404.png",
                         "goalsToDate": 22,
                         "awayScore": 3,
                         "homeScore": 4,
-                        "leadingTeamAbbrev": {"default": "TBL"},
+                        "leadingTeamAbbrev": {
+                            "default": "TBL"
+                        },
                         "timeInPeriod": "00:00",
                         "shotType": "snap",
                         "goalModifier": "none",
                         "assists": [],
                         "homeTeamDefendingSide": "left",
-                        "isHome": True,
+                        "isHome": true
                     }
-                ],
-            },
+                ]
+            }
         ],
         "shootout": [
             {
@@ -367,7 +576,7 @@ LANDING_TBL_ANA_250116_OT_SO = {
                 "shotType": "snap",
                 "result": "goal",
                 "headshot": "https://assets.nhle.com/mugs/nhl/20242025/TBL/8477404.png",
-                "gameWinner": True,
+                "gameWinner": true
             },
             {
                 "sequence": 2,
@@ -378,7 +587,7 @@ LANDING_TBL_ANA_250116_OT_SO = {
                 "shotType": "backhand",
                 "result": "save",
                 "headshot": "https://assets.nhle.com/mugs/nhl/20242025/ANA/8484153.png",
-                "gameWinner": False,
+                "gameWinner": false
             },
             {
                 "sequence": 3,
@@ -389,7 +598,7 @@ LANDING_TBL_ANA_250116_OT_SO = {
                 "shotType": "backhand",
                 "result": "save",
                 "headshot": "https://assets.nhle.com/mugs/nhl/20242025/TBL/8478010.png",
-                "gameWinner": False,
+                "gameWinner": false
             },
             {
                 "sequence": 4,
@@ -400,7 +609,7 @@ LANDING_TBL_ANA_250116_OT_SO = {
                 "shotType": "wrist",
                 "result": "save",
                 "headshot": "https://assets.nhle.com/mugs/nhl/20242025/ANA/8482745.png",
-                "gameWinner": False,
+                "gameWinner": false
             },
             {
                 "sequence": 5,
@@ -411,7 +620,7 @@ LANDING_TBL_ANA_250116_OT_SO = {
                 "shotType": "backhand",
                 "result": "save",
                 "headshot": "https://assets.nhle.com/mugs/nhl/20242025/TBL/8476453.png",
-                "gameWinner": False,
+                "gameWinner": false
             },
             {
                 "sequence": 6,
@@ -422,8 +631,8 @@ LANDING_TBL_ANA_250116_OT_SO = {
                 "shotType": "wrist",
                 "result": "save",
                 "headshot": "https://assets.nhle.com/mugs/nhl/20242025/ANA/8478873.png",
-                "gameWinner": False,
-            },
+                "gameWinner": false
+            }
         ],
         "threeStars": [
             {
@@ -431,241 +640,188 @@ LANDING_TBL_ANA_250116_OT_SO = {
                 "playerId": 8476883,
                 "teamAbbrev": "TBL",
                 "headshot": "https://assets.nhle.com/mugs/nhl/20242025/TBL/8476883.png",
-                "name": {"default": "A. Vasilevskiy", "cs": "A. Vasilevskij", "fi": "A. Vasilevski", "sk": "A. Vasilevskij"},
+                "name": {
+                    "default": "A. Vasilevskiy",
+                    "cs": "A. Vasilevskij",
+                    "fi": "A. Vasilevski",
+                    "sk": "A. Vasilevskij"
+                },
                 "sweaterNo": 88,
                 "position": "G",
                 "goalsAgainstAverage": 2.77,
-                "savePctg": 0.919,
+                "savePctg": 0.919
             },
             {
                 "star": 2,
                 "playerId": 8480843,
                 "teamAbbrev": "ANA",
                 "headshot": "https://assets.nhle.com/mugs/nhl/20242025/ANA/8480843.png",
-                "name": {"default": "L. Dostal", "cs": "L. Dostál", "sk": "L. Dostál"},
+                "name": {
+                    "default": "L. Dostal",
+                    "cs": "L. Dostál",
+                    "sk": "L. Dostál"
+                },
                 "sweaterNo": 1,
                 "position": "G",
                 "goalsAgainstAverage": 2.79,
-                "savePctg": 0.914,
+                "savePctg": 0.914
             },
             {
                 "star": 3,
                 "playerId": 8479542,
                 "teamAbbrev": "TBL",
                 "headshot": "https://assets.nhle.com/mugs/nhl/20242025/TBL/8479542.png",
-                "name": {"default": "B. Hagel"},
+                "name": {
+                    "default": "B. Hagel"
+                },
                 "sweaterNo": 38,
                 "position": "L",
                 "goals": 0,
                 "assists": 1,
-                "points": 1,
-            },
+                "points": 1
+            }
         ],
         "penalties": [
             {
-                "periodDescriptor": {"number": 1, "periodType": "REG", "maxRegulationPeriods": 3},
+                "periodDescriptor": {
+                    "number": 1,
+                    "periodType": "REG",
+                    "maxRegulationPeriods": 3
+                },
                 "penalties": [
                     {
                         "timeInPeriod": "03:48",
                         "type": "MIN",
                         "duration": 2,
                         "committedByPlayer": "Jackson LaCombe",
-                        "teamAbbrev": {"default": "ANA"},
+                        "teamAbbrev": {
+                            "default": "ANA"
+                        },
                         "drawnBy": "Jake Guentzel",
-                        "descKey": "high-sticking",
+                        "descKey": "high-sticking"
                     },
                     {
                         "timeInPeriod": "07:20",
                         "type": "MIN",
                         "duration": 2,
                         "committedByPlayer": "Zemgus Girgensons",
-                        "teamAbbrev": {"default": "TBL"},
+                        "teamAbbrev": {
+                            "default": "TBL"
+                        },
                         "drawnBy": "Jackson LaCombe",
-                        "descKey": "holding",
+                        "descKey": "holding"
                     },
                     {
                         "timeInPeriod": "12:24",
                         "type": "MIN",
                         "duration": 2,
                         "committedByPlayer": "Robby Fabbri",
-                        "teamAbbrev": {"default": "ANA"},
+                        "teamAbbrev": {
+                            "default": "ANA"
+                        },
                         "drawnBy": "Zemgus Girgensons",
-                        "descKey": "hooking",
-                    },
-                ],
+                        "descKey": "hooking"
+                    }
+                ]
             },
             {
-                "periodDescriptor": {"number": 2, "periodType": "REG", "maxRegulationPeriods": 3},
+                "periodDescriptor": {
+                    "number": 2,
+                    "periodType": "REG",
+                    "maxRegulationPeriods": 3
+                },
                 "penalties": [
                     {
                         "timeInPeriod": "02:04",
                         "type": "MIN",
                         "duration": 2,
                         "committedByPlayer": "Troy Terry",
-                        "teamAbbrev": {"default": "ANA"},
+                        "teamAbbrev": {
+                            "default": "ANA"
+                        },
                         "drawnBy": "Nick Perbix",
-                        "descKey": "interference",
+                        "descKey": "interference"
                     },
                     {
                         "timeInPeriod": "03:42",
                         "type": "MIN",
                         "duration": 2,
                         "committedByPlayer": "Jackson LaCombe",
-                        "teamAbbrev": {"default": "ANA"},
+                        "teamAbbrev": {
+                            "default": "ANA"
+                        },
                         "drawnBy": "Conor Geekie",
-                        "descKey": "hooking",
+                        "descKey": "hooking"
                     },
                     {
                         "timeInPeriod": "14:22",
                         "type": "MIN",
                         "duration": 2,
                         "committedByPlayer": "Brandon Hagel",
-                        "teamAbbrev": {"default": "TBL"},
+                        "teamAbbrev": {
+                            "default": "TBL"
+                        },
                         "drawnBy": "Radko Gudas",
-                        "descKey": "roughing",
+                        "descKey": "roughing"
                     },
                     {
                         "timeInPeriod": "14:22",
                         "type": "MIN",
                         "duration": 2,
                         "committedByPlayer": "Radko Gudas",
-                        "teamAbbrev": {"default": "ANA"},
+                        "teamAbbrev": {
+                            "default": "ANA"
+                        },
                         "drawnBy": "Brandon Hagel",
-                        "descKey": "roughing",
-                    },
-                ],
+                        "descKey": "roughing"
+                    }
+                ]
             },
             {
-                "periodDescriptor": {"number": 3, "periodType": "REG", "maxRegulationPeriods": 3},
+                "periodDescriptor": {
+                    "number": 3,
+                    "periodType": "REG",
+                    "maxRegulationPeriods": 3
+                },
                 "penalties": [
                     {
                         "timeInPeriod": "00:19",
                         "type": "MIN",
                         "duration": 2,
                         "committedByPlayer": "Jake Guentzel",
-                        "teamAbbrev": {"default": "TBL"},
+                        "teamAbbrev": {
+                            "default": "TBL"
+                        },
                         "drawnBy": "Mason McTavish",
-                        "descKey": "holding-the-stick",
+                        "descKey": "holding-the-stick"
                     },
                     {
                         "timeInPeriod": "14:22",
                         "type": "MIN",
                         "duration": 2,
                         "committedByPlayer": "Radko Gudas",
-                        "teamAbbrev": {"default": "ANA"},
+                        "teamAbbrev": {
+                            "default": "ANA"
+                        },
                         "drawnBy": "Nikita Kucherov",
-                        "descKey": "hooking",
-                    },
-                ],
+                        "descKey": "hooking"
+                    }
+                ]
             },
-            {"periodDescriptor": {"number": 4, "periodType": "OT", "maxRegulationPeriods": 3}, "penalties": []},
-        ],
+            {
+                "periodDescriptor": {
+                    "number": 4,
+                    "periodType": "OT",
+                    "maxRegulationPeriods": 3
+                },
+                "penalties": []
+            }
+        ]
     },
-    "clock": {"timeRemaining": "00:00", "secondsRemaining": 0, "running": False, "inIntermission": False},
-}
-
-SCORE_FUT_CAN_USA_250215 = {
-    "id": 2024190004,
-    "season": 20242025,
-    "gameType": 19,
-    "gameDate": "2025-02-15",
-    "venue": {"default": "Centre Bell"},
-    "startTimeUTC": "2025-02-16T01:00:00Z",
-    "easternUTCOffset": "-05:00",
-    "venueUTCOffset": "-05:00",
-    "tvBroadcasts": [
-        {"id": 384, "market": "N", "countryCode": "US", "network": "ABC", "sequenceNumber": 1},
-        {"id": 329, "market": "N", "countryCode": "US", "network": "ESPN+", "sequenceNumber": 6},
-        {"id": 282, "market": "N", "countryCode": "CA", "network": "SN", "sequenceNumber": 101},
-        {"id": 281, "market": "N", "countryCode": "CA", "network": "TVAS", "sequenceNumber": 109},
-    ],
-    "gameState": "FUT",
-    "gameScheduleState": "OK",
-    "awayTeam": {
-        "id": 67,
-        "name": {"default": "USA", "es": "Estados Unidos", "fi": "Yhdysvallat", "fr": "États-Unis"},
-        "abbrev": "USA",
-        "record": "1-0-0-0",
-        "logo": "https://assets.nhle.com/logos/ntl/svg/USA_20242025-20242025_light.svg",
-    },
-    "homeTeam": {
-        "id": 60,
-        "name": {"default": "Canada", "cs": "Kanada", "de": "Kanada", "es": "Canadá", "fi": "Kanada", "sk": "Kanada", "sv": "Kanada"},
-        "abbrev": "CAN",
-        "record": "0-1-0-0",
-        "logo": "https://assets.nhle.com/logos/ntl/svg/CAN_20242025-20242025_light.svg",
-    },
-    "gameCenterLink": "/gamecenter/usa-vs-can/2025/02/15/2024190004",
-    "neutralSite": False,
-    "venueTimezone": "America/Montreal",
-    "ticketsLink": "https://www.ticketmaster.com/artist/3184587",
-    "ticketsLinkFr": "https://www.ticketmaster.com/artist/3184587",
-    "teamLeaders": [
-        {
-            "id": 8479314,
-            "firstName": {"default": "Matthew"},
-            "lastName": {"default": "Tkachuk"},
-            "headshot": "https://assets.nhle.com/mugs/nhl/20242025/USA/8479314.png",
-            "teamAbbrev": "USA",
-            "sweaterNumber": 19,
-            "position": "L",
-            "category": "goals",
-            "value": 2,
-        },
-        {
-            "id": 8477492,
-            "firstName": {"default": "Nathan"},
-            "lastName": {"default": "MacKinnon"},
-            "headshot": "https://assets.nhle.com/mugs/nhl/20242025/CAN/8477492.png",
-            "teamAbbrev": "CAN",
-            "sweaterNumber": 29,
-            "position": "C",
-            "category": "goals",
-            "value": 1,
-        },
-        {
-            "id": 8478460,
-            "firstName": {"default": "Zach"},
-            "lastName": {"default": "Werenski"},
-            "headshot": "https://assets.nhle.com/mugs/nhl/20242025/USA/8478460.png",
-            "teamAbbrev": "USA",
-            "sweaterNumber": 8,
-            "position": "D",
-            "category": "assists",
-            "value": 3,
-        },
-        {
-            "id": 8471675,
-            "firstName": {"default": "Sidney"},
-            "lastName": {"default": "Crosby"},
-            "headshot": "https://assets.nhle.com/mugs/nhl/20242025/CAN/8471675.png",
-            "teamAbbrev": "CAN",
-            "sweaterNumber": 87,
-            "position": "C",
-            "category": "assists",
-            "value": 3,
-        },
-        {
-            "id": 8476945,
-            "firstName": {"default": "Connor"},
-            "lastName": {"default": "Hellebuyck"},
-            "headshot": "https://assets.nhle.com/mugs/nhl/20242025/USA/8476945.png",
-            "teamAbbrev": "USA",
-            "sweaterNumber": 37,
-            "position": "G",
-            "category": "wins",
-            "value": 1,
-        },
-        {
-            "id": 8476412,
-            "firstName": {"default": "Jordan"},
-            "lastName": {"default": "Binnington"},
-            "headshot": "https://assets.nhle.com/mugs/nhl/20242025/CAN/8476412.png",
-            "teamAbbrev": "CAN",
-            "sweaterNumber": 50,
-            "position": "G",
-            "category": "wins",
-            "value": 1,
-        },
-    ],
+    "clock": {
+        "timeRemaining": "00:00",
+        "secondsRemaining": 0,
+        "running": false,
+        "inIntermission": false
+    }
 }

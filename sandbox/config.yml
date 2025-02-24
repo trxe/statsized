@@ -1,0 +1,9 @@
+server:
+  host: "localhost"
+  port: 8000
+  protocol: "http://"
+
+prometheus:
+  service_name: "node"
+  host: "localhost"
+  port: 9464

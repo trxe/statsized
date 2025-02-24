@@ -1,0 +1,168 @@
+{
+    "id": 2024190004,
+    "season": 20242025,
+    "gameType": 19,
+    "gameDate": "2025-02-15",
+    "venue": {
+        "default": "Centre Bell"
+    },
+    "startTimeUTC": "2025-02-16T01:00:00Z",
+    "easternUTCOffset": "-05:00",
+    "venueUTCOffset": "-05:00",
+    "tvBroadcasts": [
+        {
+            "id": 384,
+            "market": "N",
+            "countryCode": "US",
+            "network": "ABC",
+            "sequenceNumber": 1
+        },
+        {
+            "id": 329,
+            "market": "N",
+            "countryCode": "US",
+            "network": "ESPN+",
+            "sequenceNumber": 6
+        },
+        {
+            "id": 282,
+            "market": "N",
+            "countryCode": "CA",
+            "network": "SN",
+            "sequenceNumber": 101
+        },
+        {
+            "id": 281,
+            "market": "N",
+            "countryCode": "CA",
+            "network": "TVAS",
+            "sequenceNumber": 109
+        }
+    ],
+    "gameState": "FUT",
+    "gameScheduleState": "OK",
+    "awayTeam": {
+        "id": 67,
+        "name": {
+            "default": "USA",
+            "es": "Estados Unidos",
+            "fi": "Yhdysvallat",
+            "fr": "États-Unis"
+        },
+        "abbrev": "USA",
+        "record": "1-0-0-0",
+        "logo": "https://assets.nhle.com/logos/ntl/svg/USA_20242025-20242025_light.svg"
+    },
+    "homeTeam": {
+        "id": 60,
+        "name": {
+            "default": "Canada",
+            "cs": "Kanada",
+            "de": "Kanada",
+            "es": "Canadá",
+            "fi": "Kanada",
+            "sk": "Kanada",
+            "sv": "Kanada"
+        },
+        "abbrev": "CAN",
+        "record": "0-1-0-0",
+        "logo": "https://assets.nhle.com/logos/ntl/svg/CAN_20242025-20242025_light.svg"
+    },
+    "gameCenterLink": "/gamecenter/usa-vs-can/2025/02/15/2024190004",
+    "neutralSite": "False",
+    "venueTimezone": "America/Montreal",
+    "ticketsLink": "https://www.ticketmaster.com/artist/3184587",
+    "ticketsLinkFr": "https://www.ticketmaster.com/artist/3184587",
+    "teamLeaders": [
+        {
+            "id": 8479314,
+            "firstName": {
+                "default": "Matthew"
+            },
+            "lastName": {
+                "default": "Tkachuk"
+            },
+            "headshot": "https://assets.nhle.com/mugs/nhl/20242025/USA/8479314.png",
+            "teamAbbrev": "USA",
+            "sweaterNumber": 19,
+            "position": "L",
+            "category": "goals",
+            "value": 2
+        },
+        {
+            "id": 8477492,
+            "firstName": {
+                "default": "Nathan"
+            },
+            "lastName": {
+                "default": "MacKinnon"
+            },
+            "headshot": "https://assets.nhle.com/mugs/nhl/20242025/CAN/8477492.png",
+            "teamAbbrev": "CAN",
+            "sweaterNumber": 29,
+            "position": "C",
+            "category": "goals",
+            "value": 1
+        },
+        {
+            "id": 8478460,
+            "firstName": {
+                "default": "Zach"
+            },
+            "lastName": {
+                "default": "Werenski"
+            },
+            "headshot": "https://assets.nhle.com/mugs/nhl/20242025/USA/8478460.png",
+            "teamAbbrev": "USA",
+            "sweaterNumber": 8,
+            "position": "D",
+            "category": "assists",
+            "value": 3
+        },
+        {
+            "id": 8471675,
+            "firstName": {
+                "default": "Sidney"
+            },
+            "lastName": {
+                "default": "Crosby"
+            },
+            "headshot": "https://assets.nhle.com/mugs/nhl/20242025/CAN/8471675.png",
+            "teamAbbrev": "CAN",
+            "sweaterNumber": 87,
+            "position": "C",
+            "category": "assists",
+            "value": 3
+        },
+        {
+            "id": 8476945,
+            "firstName": {
+                "default": "Connor"
+            },
+            "lastName": {
+                "default": "Hellebuyck"
+            },
+            "headshot": "https://assets.nhle.com/mugs/nhl/20242025/USA/8476945.png",
+            "teamAbbrev": "USA",
+            "sweaterNumber": 37,
+            "position": "G",
+            "category": "wins",
+            "value": 1
+        },
+        {
+            "id": 8476412,
+            "firstName": {
+                "default": "Jordan"
+            },
+            "lastName": {
+                "default": "Binnington"
+            },
+            "headshot": "https://assets.nhle.com/mugs/nhl/20242025/CAN/8476412.png",
+            "teamAbbrev": "CAN",
+            "sweaterNumber": 50,
+            "position": "G",
+            "category": "wins",
+            "value": 1
+        }
+    ]
+}

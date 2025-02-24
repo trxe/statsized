@@ -37,7 +37,6 @@ class OTLPMetrics:
         return metrics.get_meter(metric_name)
 
 class PrometheusMetrics:
-
     # Service name is required for most backends
     resource = Resource(attributes={
         SERVICE_NAME: "dice-service"
